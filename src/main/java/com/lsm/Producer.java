@@ -27,7 +27,7 @@ public class Producer {
 
         org.apache.kafka.clients.producer.Producer producer = new KafkaProducer<String, String>(properties);
 
-        ProducerRecord<String, String> record = new ProducerRecord("lsm", "what are you 弄啥呢1");
+        ProducerRecord<String, String> record = new ProducerRecord("lsm", "what are you 弄啥呢 Roman");
         try {
             producer.send(record, new KafkaCallback()).get();
         } catch (InterruptedException e) {
