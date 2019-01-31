@@ -17,6 +17,7 @@
             url: "/view/toDayPalyList",
             type: "GET",
             success: function (data) {
+                console.log("demo test");
                 for ( var i = 0; i < data.length; i++){
                     $("#tablelist").append("<tr><td>" + data[i].name + "</td></tr><tr><td><img src='" + data[i].coverImgUrl +"'></td></tr>")
                 }
